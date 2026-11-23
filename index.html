@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru" class="js"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сергею Валерьевичу Ручьёву: сеть аккаунтов об отдыхе для Термоленда</title>
+<meta name="description" content="Концепция сети тематических аккаунтов об отдыхе для Термоленда, план выхода и семь роликов-образцов. «Бизнес по-русски», медиа-заводик">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Сеть аккаунтов об отдыхе для Термоленда: концепция и семь роликов-образцов">
+<meta property="og:description" content="Концепция сети тематических аккаунтов об отдыхе для Термоленда, план выхода и семь роликов-образцов. «Бизнес по-русски», медиа-заводик">
+<meta property="og:url" content="https://ilin20vek.github.io/termoland-fany/">
+<meta property="og:image" content="https://ilin20vek.github.io/termoland-fany/i/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<script>if((window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)||navigator.webdriver)document.documentElement.classList.remove('js')</script>
+<style>
+@font-face{font-family:Rubik;src:url(fonts/rubik-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Rubik;src:url(fonts/rubik-500.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Rubik;src:url(fonts/rubik-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Rubik;src:url(fonts/rubik-800.woff2) format('woff2');font-weight:800;font-display:swap}
+/* --fon/--tekst/--akcent читает kod/og.py */
+:root{--fon:#04222c;--zel:#04222c;--zel-t:#031920;--tekst:#ffffff;--akcent:#22c3e0;--bel:#edf0f0;--pl:#ffffff;--chern:#010c0f;--mut:#4d5557;--li:#d2d7d9;--ease:cubic-bezier(.2,.75,.2,1)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bel);color:var(--chern);font:400 17px/1.55 Rubik,system-ui,Arial,sans-serif;overflow-x:hidden}
+.w{max-width:1120px;margin:0 auto;padding:0 16px}
+/* шапка - полоса бренда клиента, зелень переливается */
+@keyframes perelivy{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero{position:relative;overflow:hidden;color:#fff;padding:34px 0 52px;background:linear-gradient(120deg,#031e26,#04222c 35%,#2a434c 55%,#04222c 75%,#031c24);background-size:300% 300%;animation:perelivy 14s ease infinite}
+.hero:before,.hero:after{content:"";position:absolute;top:0;bottom:0;background:var(--akcent);transform:skewX(-12deg);transform-origin:top}
+.hero:before{right:58px;width:18px} .hero:after{right:-40px;width:60px;background:#20b7d3}
+.shapka{display:flex;align-items:center;gap:12px}
+.shapka img{width:54px;height:54px} .shapka b{display:block;font-weight:700;font-size:16px;letter-spacing:.02em} .shapka span{font-size:14px;opacity:.8}
+.hs{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;margin-top:30px}
+.obr{font-weight:500;font-size:20px;color:var(--akcent);margin-bottom:8px}
+h1{font-weight:800;font-size:clamp(32px,5.2vw,54px);line-height:1.06;margin:0 0 16px;letter-spacing:-.01em}
+h1 .akc{color:var(--akcent);display:inline-block}
+.lead{font-size:18px;max-width:600px;margin:0;opacity:.95} .lead b{font-weight:700}
+@keyframes vverh{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.js .poyav{opacity:0;animation:vverh .9s var(--ease) forwards;animation-delay:var(--d)}
+@keyframes kach{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.js h1 .akc{animation:kach 3.5s ease-in-out 1.6s infinite}
+/* сундучок «в подарок» */
+.sun-k{all:unset;cursor:pointer;text-decoration:underline dotted 3px;text-underline-offset:.14em;border-radius:6px}
+.sun-k:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.sun-m{height:.72em;width:auto;margin-right:.18em;vertical-align:-.02em;overflow:visible}
+.sun-mk{transform-origin:2px 10px;transition:transform .3s var(--ease)}
+.sun-k:hover .sun-mk{transform:translateY(-3px) rotate(-22deg)}
+/* большой сундук в разделе «Подарок» (11.11, Игорь: «стоит большой сундук, который так и напрашивается, чтобы на него нажать») */
+.pod-sun{position:relative}
+.bsun{all:unset;cursor:pointer;display:none;position:relative;isolation:isolate;margin:14px auto 0;width:min(420px,74vw);text-align:center;-webkit-tap-highlight-color:transparent}
+.js .pod-sun:not(.otkr) .bsun,.bsun.ushel{display:block}
+.js .pod-sun:not(.otkr) .setka{display:none}
+.bsun:before{content:"";position:absolute;left:50%;top:40%;width:150%;aspect-ratio:1;background:radial-gradient(circle,rgba(34,195,224,.6),rgba(34,195,224,0) 62%);transform:translate(-50%,-50%);animation:pulsar 2.4s ease-in-out infinite;z-index:-1;pointer-events:none}
+@keyframes pulsar{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(.88)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.04)}}
+.bsun-b{display:block;transform-origin:50% 92%;animation:zov 2.8s ease-in-out 1s infinite}
+@keyframes zov{0%,68%,100%{transform:none}74%{transform:translateY(-8px) rotate(-4deg)}80%{transform:translateY(-8px) rotate(4deg)}86%{transform:rotate(-2deg)}92%{transform:rotate(1deg)}}
+.bsun svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 18px 20px rgba(1,12,15,.3))}
+.sun-kr{transform-origin:22px 92px;transition:transform .5s cubic-bezier(.3,1.5,.5,1)}
+@media(hover:hover){.bsun:hover .bsun-b{animation-play-state:paused} .bsun:hover .sun-kr{transform:translate(-2px,-9px) rotate(-7deg)}}
+.bsun.otkr .sun-kr{transform:translate(-6px,-26px) rotate(-24deg)}
+.sun-svet{opacity:0;transition:opacity .5s}
+.bsun.otkr .sun-svet{opacity:1}
+@keyframes trjas{0%,100%{transform:none}20%{transform:rotate(-5deg)}40%{transform:rotate(5deg)}60%{transform:rotate(-3deg)}80%{transform:rotate(3deg)}}
+.bsun.tr .bsun-b{animation:trjas .42s ease-in-out}
+.bsun.otkr .bsun-b{animation:none}
+.bsun-t{display:inline-block;margin-top:16px;background:var(--akcent);color:var(--chern);font-weight:800;font-size:clamp(19px,2.4vw,23px);border-radius:12px;padding:12px 28px;box-shadow:0 7px 0 #1ca2ba,0 14px 26px rgba(1,12,15,.22);transition:transform .15s,box-shadow .15s,opacity .25s}
+@media(hover:hover){.bsun:hover .bsun-t{transform:translateY(-2px)}}
+.bsun:active .bsun-t{transform:translateY(5px);box-shadow:0 2px 0 #1ca2ba,0 6px 12px rgba(1,12,15,.2)}
+.bsun:focus-visible .bsun-t{outline:3px solid var(--zel-t);outline-offset:4px}
+.bsun.otkr .bsun-t{opacity:0}
+.bsun.ushel{position:absolute;left:0;right:0;top:0;z-index:5;pointer-events:none;transition:opacity .7s,transform .7s var(--ease)}
+.bsun.gas{opacity:0;transform:scale(.8)}
+.bsun.skryt{display:none}
+.pod-sun.otkr .pl{position:relative;z-index:6}
+/* веер: влетает, плавает, при наведении выпрямляется */
+.veer{display:flex;justify-content:center;padding-right:40px}
+.vk{all:unset;cursor:pointer;width:31%;max-width:170px;display:block;transform:rotate(var(--r)) translateY(var(--y))}
+.vk:nth-child(1){margin-right:-14px} .vk:nth-child(2){z-index:1} .vk:nth-child(3){margin-left:-14px}
+@keyframes vlet{from{opacity:0;transform:translateY(170px) scale(.75) rotate(0deg)}to{opacity:1;transform:rotate(var(--r)) translateY(var(--y))}}
+.js .vk{opacity:0;animation:vlet 1s var(--ease) forwards;animation-delay:var(--d)}
+@keyframes plav{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.plav{display:block;animation:plav 4s ease-in-out infinite;animation-delay:var(--p)}
+.kv{display:block;position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden;border:3px solid #fff;box-shadow:0 12px 30px rgba(0,0,0,.32);transition:transform .35s var(--ease),box-shadow .35s;background:#031920}
+.kv img,.kv video,.kar img,.kar video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.pv{opacity:0;transition:opacity .45s}
+.igraet .pv{opacity:1}
+.vk:hover .kv,.vk:focus-visible .kv{transform:rotate(calc(-1 * var(--r))) scale(1.08);box-shadow:0 20px 44px rgba(0,0,0,.4),0 0 0 4px var(--akcent)}
+.vk:hover{z-index:2}
+.metka{display:inline-block;margin:48px 0 10px;background:var(--akcent);color:var(--chern);font-weight:700;border-radius:4px;padding:5px 14px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;transform:skewX(-8deg)}
+h2{font-weight:800;font-size:clamp(25px,3.6vw,36px);line-height:1.15;margin:0 0 10px;color:var(--zel-t)}
+.pod{color:var(--mut);margin:0 0 20px;max-width:760px}
+/* появление при прокрутке */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .7s var(--ease) var(--d,0s),transform .7s var(--ease) var(--d,0s)}
+.js .rv.vis{opacity:1;transform:none}
+/* история клиента: цифры */
+.fakty{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.f{background:var(--pl);border-radius:14px;padding:18px 18px 16px;border-top:6px solid var(--akcent);transition:transform .3s var(--ease),box-shadow .3s}
+.f:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(1,12,15,.14)}
+.f b{display:block;font-weight:800;font-size:clamp(26px,3.2vw,36px);line-height:1.05;color:var(--zel);letter-spacing:-.01em}
+.f b small{font-size:.55em;font-weight:700}
+.f span{display:block;margin-top:8px;color:var(--mut);font-size:15px;line-height:1.4}
+.tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:18px}
+.tri>div{background:var(--pl);border-radius:14px;padding:18px 20px;border-left:6px solid var(--akcent);transition:transform .3s var(--ease),box-shadow .3s}
+.tri>div:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(1,12,15,.14)}
+.tri .n{font-weight:800;color:var(--zel);font-size:14px;letter-spacing:.1em} .tri b{display:block;font-size:19px;margin:4px 0 6px} .tri p{margin:0;color:var(--mut)}
+/* сетка роликов: подъём, наклон за курсором, блик, беззвучный просмотр */
+.setka{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:22px 16px}
+.pl{all:unset;cursor:pointer;display:block;transition:opacity .3s,filter .3s,transform .7s var(--ease) var(--d,0s)}
+.kar{position:relative;display:block;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#c8ced1;box-shadow:0 6px 16px rgba(1,12,15,.16);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px)) scale(var(--s,1));transition:transform .25s var(--ease),box-shadow .3s}
+.pl:hover .kar,.pl:focus-visible .kar,.pl.igraet .kar{--ty:-8px;--s:1.04;box-shadow:0 20px 40px rgba(1,12,15,.35),0 0 0 4px var(--akcent)}
+.blik{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.42),transparent 48%);opacity:0;transition:opacity .25s}
+.pl:hover .blik{opacity:1}
+@keyframes puls{0%{box-shadow:0 0 0 0 rgba(34,195,224,.75)}70%{box-shadow:0 0 0 14px rgba(34,195,224,0)}100%{box-shadow:0 0 0 0 rgba(34,195,224,0)}}
+.igr{position:absolute;top:10px;right:10px;width:42px;height:42px;border-radius:50%;background:var(--akcent);color:var(--chern);display:grid;place-items:center;animation:puls 2.4s infinite;transition:transform .25s var(--ease)}
+.igr svg{width:20px;height:20px;margin-left:2px}
+.pl:hover .igr{transform:scale(1.15)}
+@media(hover:hover){.setka:has(.pl:hover) .pl:not(:hover){opacity:.55;filter:saturate(.55)}}
+.nz{display:block;margin:10px 2px 0;font-weight:500;line-height:1.3;transition:color .2s}
+.pl:hover .nz{color:var(--zel-t)}
+.konec{margin:58px 0 0;background:var(--zel);color:#fff;position:relative;overflow:hidden;padding:8px 0 44px}
+.konec:after{content:"";position:absolute;top:0;bottom:0;left:-30px;width:56px;background:var(--akcent);transform:skewX(-12deg)}
+.konec .w{position:relative;z-index:1;padding-left:48px}
+.konec h2{color:#fff} .konec p{max-width:640px;font-size:18px;margin:0 0 22px}
+.zv{max-width:680px;background:#031d25;border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:22px 22px 20px}
+.kto{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.kto img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid var(--akcent);box-shadow:0 6px 18px rgba(0,0,0,.25);flex:none}
+.kto b{display:block;font-size:19px} .kto span{font-size:14px;opacity:.8}
+.zv-z{font-weight:800;font-size:22px;line-height:1.25;margin:0 0 4px}
+.zv-p{opacity:.9;margin:0 0 14px}
+.zv-l{font-size:14px;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin:12px 0 7px}
+.zv-r{display:flex;flex-wrap:wrap;gap:8px}
+.ch{all:unset;cursor:pointer;border:2px solid rgba(255,255,255,.55);border-radius:22px;padding:8px 15px;font-weight:500;font-size:15px;line-height:1.2;transition:background .15s,transform .15s}
+.ch:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)} .ch:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.ch[aria-pressed="true"]{background:var(--akcent);border-color:var(--akcent);color:var(--chern)}
+.ch small{display:block;font-size:14px;opacity:.75;font-weight:400}
+.zv-itog{margin:18px 0 12px;font-size:17px} .zv-itog b{color:var(--akcent)}
+.zv-k{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.zv-tg,.zv-tel{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:18px;border-radius:12px;padding:14px 22px;transition:transform .2s var(--ease)}
+.zv-tg:hover,.zv-tel:hover{transform:translateY(-2px)}
+.zv-tg{background:var(--akcent);color:var(--chern);position:relative;overflow:hidden}
+@keyframes blesk{0%{left:-60%}55%,100%{left:130%}}
+.zv-tg:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:blesk 3.4s ease-in-out infinite}
+.zv-tg svg{width:22px;height:22px;flex:none}
+.zv-tel{border:2px solid rgba(255,255,255,.7);color:#fff}
+.zv-mel{font-size:14px;opacity:.8;margin:10px 0 0}
+.podpis.avt img{width:84px;height:84px;border-radius:50%;object-fit:cover}
+.podpis{display:flex;align-items:center;gap:12px;margin-top:28px} .podpis img{width:46px;height:46px} .podpis b{display:block} .podpis span{font-size:14px;opacity:.8}
+.b{display:inline-block;background:#e1e4e6;color:var(--chern);border:0;border-radius:10px;padding:11px 16px;text-decoration:none;font:500 15px Rubik,Arial,sans-serif;cursor:pointer;margin:4px 6px 4px 0;transition:filter .15s,transform .15s}
+.b.ak{background:var(--akcent)} .b:hover{filter:brightness(.95);transform:translateY(-1px)}
+/* окно ролика: всплывает, листается стрелками, клавишами и свайпом */
+.okno{position:fixed;inset:0;background:rgba(1,5,7,.9);display:flex;align-items:center;justify-content:center;padding:16px;z-index:9;visibility:hidden;opacity:0;transition:opacity .3s,visibility 0s .3s}
+.okno.on{visibility:visible;opacity:1;transition:opacity .3s}
+.vn{background:var(--pl);border-radius:16px;max-width:860px;width:100%;max-height:94vh;overflow:auto;display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:20px;padding:16px;transform:scale(.9) translateY(24px);transition:transform .4s var(--ease)}
+.okno.on .vn{transform:none}
+.vn.smena{animation:smena .35s var(--ease)}
+@keyframes smena{from{opacity:.2;transform:translateX(var(--sx,0))}to{opacity:1;transform:none}}
+.vn video{width:100%;aspect-ratio:9/16;border-radius:12px;background:#000;display:block}
+.vn .sch{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--zel)}
+.vn h3{margin:4px 0 10px;font-size:21px;line-height:1.25;color:var(--zel-t)}
+.vn .ml{font-size:14px;color:var(--mut);margin:12px 0 4px}
+.vn textarea{width:100%;height:120px;background:var(--bel);color:var(--chern);border:1px solid var(--li);border-radius:8px;padding:9px;font:14px/1.45 Rubik,Arial,sans-serif;resize:vertical}
+.zakr2{position:fixed;top:10px;right:10px;z-index:10;background:#fff;color:var(--chern);border:0;border-radius:22px;padding:10px 16px;font:700 16px Rubik,Arial,sans-serif;cursor:pointer;box-shadow:0 2px 10px #0008}
+.str{position:fixed;top:50%;z-index:10;width:52px;height:52px;margin-top:-26px;border:0;border-radius:50%;background:var(--akcent);color:var(--chern);font:800 24px Rubik,Arial,sans-serif;cursor:pointer;box-shadow:0 4px 14px #0008;transition:transform .2s var(--ease)}
+.str:hover{transform:scale(1.1)} .str.l{left:14px} .str.p{right:14px}
+footer{text-align:center;padding:24px 16px 40px;font-size:15px;background:var(--zel);color:#ffffffc8;border-top:1px solid rgba(255,255,255,.15)}
+footer q{display:block;font-weight:700;color:#fff;font-size:17px;margin-bottom:6px}
+/* узкий экран: шапка высокая, косой срез уезжает на текст - вместо него жёлтый кант снизу */
+@media(max-width:860px){.fakty{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.hs{grid-template-columns:1fr} .veer{padding-right:0;margin-top:6px}
+ .hero:before{display:none} .hero:after{top:auto;bottom:0;left:0;right:0;width:auto;height:10px;transform:none;background:var(--akcent)}}
+@media(max-width:640px){.okno{align-items:flex-start;padding-top:60px} .vn{grid-template-columns:1fr} .vn video{max-width:300px;margin:0 auto}
+ .str{top:auto;bottom:14px;margin-top:0} .okno{padding-bottom:80px}
+ .setka{grid-template-columns:repeat(2,1fr)} .konec .w{padding-left:36px} .zv{padding:18px 16px} .zv-z{font-size:20px} .zv-tg,.zv-tel{width:100%;justify-content:center;box-sizing:border-box}
+ .igr{width:36px;height:36px;top:8px;right:8px} .igr svg{width:17px;height:17px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style></head><body>
+<!-- Страница для С. В. Ручьёва, задача 1656, 23.11.2026. Ссылку отправляет Игорь -->
+<header class="hero"><div class="w">
+ <div class="shapka poyav" style="--d:0s"><img src="i/bpr.png" alt="Бизнес по-русски"><div><b>Бизнес по-русски</b><span>медиа-заводик</span></div></div>
+ <div class="hs">
+  <div>
+   <div class="obr poyav" style="--d:.15s">Сергею&nbsp;Валерьевичу Ручьёву</div>
+   <h1 class="poyav" style="--d:.3s">Сеть аккаунтов об отдыхе, где Термоленд - каждый день <button class="akc sun-k" id="sunk" type="button" title="Откройте ролики"><svg class="sun-m" viewBox="0 0 24 22" aria-hidden="true"><path class="sun-mk" d="M2 10V7Q2 3 12 3T22 7V10Z" fill="currentColor"/>
+<rect x="2" y="11" width="20" height="10" rx="2" fill="currentColor"/><rect x="10" y="9" width="4" height="5" rx="1" fill="#031920"/></svg>смотреть&nbsp;ролики</button></h1>
+   <p class="lead poyav" style="--d:.5s">Сергей Валерьевич, предлагаю для Термоленда не один аккаунт, а сеть: много аккаунтов о бане, тёплой воде и отдыхе рядом с домом. У каждого свой зритель, и в каждом Термоленд. Ниже - как это устроено и семь роликов-образцов, собранных из клипов самой сети.</p>
+  </div>
+  <div class="veer"></div>
+ </div>
+</div></header>
+<main class="w">
+ <div class="metka rv">Где Термоленд сейчас</div>
+ <h2 class="rv">Клипы уже залетают, но площадок мало</h2>
+ <p class="pod rv">23 ноября я разобрал соцсети Термоленда: 18 групп ВКонтакте, YouTube, Rutube и Дзен. Типичный клип набирает 3 090 просмотров, а каждый пятый уходит за 25 тысяч. Вот четыре числа.</p>
+ <div class="fakty">
+  <div class="f rv" style="--d:0ms"><b>291&nbsp;894</b><span>человека в 18 группах Термоленда во ВКонтакте</span></div>
+  <div class="f rv" style="--d:90ms"><b>405&nbsp;381</b><span>просмотров у лучшего клипа: баня в Бутово, 9 секунд</span></div>
+  <div class="f rv" style="--d:180ms"><b>252</b><span>подписчика у канала сети на YouTube. На Rutube и в Дзене официальных каналов нет</span></div>
+  <div class="f rv" style="--d:270ms"><b>26&nbsp;332</b><span>просмотра у чужого обзора Термоленда на YouTube. О Термоленде уже рассказывают, только не сам Термоленд</span></div>
+ </div>
+ <div class="metka rv">Концепция</div>
+ <h2 class="rv">Один материал - сеть аккаунтов</h2>
+ <p class="pod rv">Съёмки у Термоленда много, она выходит каждый день. Мы раскладываем её по сети аккаунтов, и каждый говорит со своим зрителем. Человек ищет не Термоленд, а где попариться рядом с домом или куда сходить в выходные. Там его и встречает ролик. Первые семь аккаунтов, у каждого ниже свой ролик-образец:</p>
+ <div class="tri">
+  <div class="rv" style="--d:0ms"><b>Бани и парение</b><p>Пар крупно, веники, групповое парение. Для тех, кто любит баню: это самая сильная тема сети, лучший клип как раз про баню.</p></div>
+  <div class="rv" style="--d:110ms"><b>Куда сходить зимой в Москве</b><p>Тёплая вода под снегом, парная, потом уличный бассейн. Для тех, кто ищет, чем заняться зимой.</p></div>
+  <div class="rv" style="--d:220ms"><b>Куда сходить в Москве</b><p>Горки, волновой бассейн, вечеринки. Для тех, кто выбирает, куда пойти на выходных, и не знает, что такое есть в городе.</p></div>
+  <div class="rv" style="--d:330ms"><b>Парение: испытание</b><p>Баня как вызов: жар нарастает, а зритель решает, выдержит ли до конца. Для тех, кто любит баню погорячее или побаивается жара.</p></div>
+  <div class="rv" style="--d:440ms"><b>Отдых рядом с домом</b><p>Вечер после работы вместо дивана. Каждый курорт - по своим районам и станциям. Для тех, кто выбирает ближайший.</p></div>
+  <div class="rv" style="--d:550ms"><b>Банные ритуалы и уход</b><p>Шаги банного ритуала по порядку. Ролик хочется сохранить на выходные.</p></div>
+  <div class="rv" style="--d:660ms"><b>День для себя</b><p>Пар, соль, уход, день с подругой. Для тех, кто ищет, где отдохнуть от недели.</p></div>
+  <div class="rv" style="--d:770ms"><b>Дальше - ступенями</b><p>Новые темы и города добавляем, когда первые аккаунты покажут числа. Не сто аккаунтов сразу, а рост от того, что сработало.</p></div>
+ </div>
+ <div class="metka rv">Площадки</div>
+ <h2 class="rv">Где выходит сеть</h2>
+ <div class="tri">
+  <div class="rv" style="--d:0ms"><b>VK Клипы</b><p>Главный зритель уже здесь: 291 894 человека в группах Термоленда, клип с баней набрал 405 381 просмотр.</p></div>
+  <div class="rv" style="--d:110ms"><b>YouTube Shorts</b><p>У сети 252 подписчика, а чужие обзоры Термоленда набирают 26 332 и 21 782 просмотра. Зритель есть, канала нет. До конца 2026 года ФАС обещала не штрафовать за рекламу на YouTube, с 2027 года правила могут измениться - сверим в начале года.</p></div>
+  <div class="rv" style="--d:220ms"><b>Rutube и Дзен</b><p>Официальных каналов Термоленда нет. Место свободно.</p></div>
+  <div class="rv" style="--d:330ms"><b>Instagram</b><p>Аудитория есть, но с 1 сентября 2025 года реклама в Instagram в России запрещена законом (Meta признана экстремистской организацией), штраф юрлицу - до 500 тысяч. Мы туда рекламу не ставим. Если хотите работать в Instagram, решение за Вашим юристом.</p></div>
+ </div>
+ <div class="metka rv" id="podarok">Образцы</div>
+ <h2 class="rv">Семь роликов в стиле сети</h2>
+ <p class="pod rv">Собраны из клипов Термоленда. У каждого ролика названо, зачем его досматривать: обещание в первые полторы секунды, ответ в конце и повод переслать другу. Наведите на обложку, и ролик оживёт. Нажмите - откроется с описанием.</p>
+ <div class="pod-sun" id="podsun">
+  <button class="bsun" id="bsun" type="button" aria-expanded="false" aria-controls="setka"><span class="bsun-b"><svg viewBox="0 0 220 190" aria-hidden="true">
+<defs><radialGradient id="sg"><stop offset="0" stop-color="#bdedf6"/><stop offset=".45" stop-color="#22c3e0" stop-opacity=".85"/><stop offset="1" stop-color="#22c3e0" stop-opacity="0"/></radialGradient></defs>
+<ellipse class="sun-svet" cx="110" cy="92" rx="96" ry="40" fill="url(#sg)"/>
+<rect x="22" y="92" width="176" height="88" rx="10" fill="#031d25"/>
+<rect x="22" y="92" width="176" height="14" fill="#020f14" opacity=".35"/>
+<rect x="50" y="92" width="18" height="88" fill="#22c3e0"/><rect x="152" y="92" width="18" height="88" fill="#22c3e0"/>
+<rect x="22" y="168" width="176" height="12" rx="6" fill="#020f14" opacity=".35"/>
+<g class="sun-kr"><path d="M22 92V66Q22 30 110 30T198 66V92Z" fill="#04222c"/>
+<path d="M50 92V44Q58 36 68 34V92Z" fill="#22c3e0"/><path d="M152 92V34Q162 36 170 44V92Z" fill="#22c3e0"/>
+<path d="M22 92V66Q22 30 110 30T198 66V92Z" fill="none" stroke="#020f14" stroke-opacity=".35" stroke-width="3"/></g>
+<rect x="96" y="84" width="28" height="34" rx="5" fill="#22c3e0" stroke="#020f14" stroke-width="3"/>
+<circle cx="110" cy="98" r="4" fill="#020f14"/><rect x="108" y="100" width="4" height="9" fill="#020f14"/>
+</svg></span><span class="bsun-t">Откройте ролики</span></button>
+  <div class="setka" id="setka">
+   <button class="pl" data-i="0" aria-label="Смотреть: Грейпфрут в парной - угадай, куда он пойдёт"><span class="kar"><img src="o/s1-bani-penza.jpg?v=2" alt="Грейпфрут в парной - угадай, куда он пойдёт" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s1-bani-penza-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">Грейпфрут в парной - угадай, куда он пойдёт</span></button>
+   <button class="pl" data-i="1" aria-label="Смотреть: Сугробы вокруг - слабо в этот бассейн?"><span class="kar"><img src="o/s2-zima-moskva.jpg?v=2" alt="Сугробы вокруг - слабо в этот бассейн?" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s2-zima-moskva-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">Сугробы вокруг - слабо в этот бассейн?</span></button>
+   <button class="pl" data-i="2" aria-label="Смотреть: Это Турция или Москва? Угадай до конца"><span class="kar"><img src="o/s3-turciya-ili-moskva.jpg?v=2" alt="Это Турция или Москва? Угадай до конца" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s3-turciya-ili-moskva-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">Это Турция или Москва? Угадай до конца</span></button>
+   <button class="pl" data-i="3" aria-label="Смотреть: Ты на полке. Выдержишь до конца?"><span class="kar"><img src="o/s4-ruki-parmeystera.jpg?v=2" alt="Ты на полке. Выдержишь до конца?" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s4-ruki-parmeystera-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">Ты на полке. Выдержишь до конца?</span></button>
+   <button class="pl" data-i="4" aria-label="Смотреть: После работы - снова диван?"><span class="kar"><img src="o/s5-vecher-posle-raboty.jpg?v=2" alt="После работы - снова диван?" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s5-vecher-posle-raboty-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">После работы - снова диван?</span></button>
+   <button class="pl" data-i="5" aria-label="Смотреть: Баня в 5 шагов. Пятый - лучший"><span class="kar"><img src="o/s6-ritual-5-shagov.jpg?v=2" alt="Баня в 5 шагов. Пятый - лучший" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s6-ritual-5-shagov-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">Баня в 5 шагов. Пятый - лучший</span></button>
+   <button class="pl" data-i="6" aria-label="Смотреть: Куда ходят подруги? Смотри до конца"><span class="kar"><img src="o/s7-den-dlya-sebya.jpg?v=2" alt="Куда ходят подруги? Смотри до конца" loading="lazy"><video class="pv" muted loop playsinline preload="none" data-src="v/s7-den-dlya-sebya-web.mp4"></video><span class="blik"></span><span class="igr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span></span><span class="nz">Куда ходят подруги? Смотри до конца</span></button>
+  </div>
+ </div>
+ <div class="metka rv">Что делаем мы</div>
+ <h2 class="rv">Работа сети - на нас</h2>
+ <p class="pod rv">От Вас - доступ к съёмке и согласование тем. Остальное делаем мы.</p>
+ <div class="tri">
+  <div class="rv" style="--d:0ms"><div class="n">01</div><b>Сценарий и нарезка</b><p>Под каждый аккаунт свой стиль и своя нарезка. Одинаковых роликов на двух аккаунтах нет.</p></div>
+  <div class="rv" style="--d:110ms"><div class="n">02</div><b>Ведение и выкладка</b><p>Оформляем аккаунты и выкладываем по графику, руками или через официальный интерфейс площадки.</p></div>
+  <div class="rv" style="--d:220ms"><div class="n">03</div><b>Отчёт числами</b><p>Раз в неделю: сколько роликов вышло, просмотры, переходы. Следующая ступень сети - когда первая показала числа.</p></div>
+ </div>
+ <div class="metka rv">Правила</div>
+ <h2 class="rv">Чтобы площадки не закрыли сеть</h2>
+ <p class="pod rv">Аккаунты, созданные пачкой, площадки банят волнами. ВКонтакте отсеивает дубли нейросетью, YouTube режет повторяющийся контент. Поэтому работаем так:</p>
+ <div class="tri">
+  <div class="rv" style="--d:0ms"><b>У каждого аккаунта свой смысл</b><p>Своя тема, свой зритель, своя нарезка. Ни одного одинакового ролика на двух аккаунтах.</p></div>
+  <div class="rv" style="--d:110ms"><b>Без выдуманных людей</b><p>Аккаунты ведутся как тематические страницы об отдыхе и не скрывают связь с Термолендом. Гостей с отзывами мы не придумываем: выдуманный отзыв - скрытая реклама и повод закрыть сразу всю сеть.</p></div>
+  <div class="rv" style="--d:220ms"><b>Маркировка</b><p>Ролик, который зовёт в Термоленд, выходит с пометкой «Реклама» и токеном erid, как требует закон. Кто из нас подаёт данные в реестр, решим вместе с Вашим юристом.</p></div>
+  <div class="rv" style="--d:330ms"><b>Без накрутки</b><p>Только своё: съёмка Термоленда и наша. Без ботов, программ-кликеров и купленных просмотров.</p></div>
+ </div>
+ <div class="metka rv">План выхода</div>
+ <h2 class="rv">Начинаем с семи аккаунтов, растём от чисел</h2>
+ <p class="pod rv">Не сто аккаунтов в первый день, а ступени. Каждая следующая - когда предыдущая показала числа.</p>
+ <div class="tri">
+  <div class="rv" style="--d:0ms"><b>Недели 1-2: семь аккаунтов</b><p>Бани, испытание паром, зима в Москве, куда сходить в Москве, рядом с домом, ритуалы, день для себя. Каждый день по ролику на каждом аккаунте в VK Клипах, YouTube Shorts, Rutube и Дзене. На каждом аккаунте и каждой площадке ролики разные.</p></div>
+  <div class="rv" style="--d:110ms"><b>Каждый ролик - история</b><p>Обещание в первые полторы секунды, ответ в конце, повод переслать: «сохрани на выходные», «отметь, с кем пойдёшь». Красивая картинка без причины досмотреть не выходит.</p></div>
+  <div class="rv" style="--d:220ms"><b>Через две недели - числа</b><p>По каждому аккаунту: типичный ролик, сколько роликов ушло выше 10 тысяч просмотров, переходы и промокод. Сравниваем с тем, что сеть набирает сейчас: типичный клип - 3 090.</p></div>
+  <div class="rv" style="--d:330ms"><b>Дальше - города</b><p>Что сработало, переносим на курорты: свой аккаунт «рядом с домом» по районам и станциям. Что не тянет, закрываем без сожалений.</p></div>
+ </div>
+</main>
+<section class="konec"><div class="w">
+ <div class="metka rv">Дальше</div>
+ <h2 class="rv">Давайте созвонимся и обсудим</h2>
+ <p class="rv">20 минут: покажу разбор клипов по курортам и обсудим, с каких аккаунтов начать.</p>
+ <div class="zv-k rv"><a class="zv-tg" href="https://t.me/ingvarcrypto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.1l-4.7-1.5c-1-.3-1-1 .2-1.5L20.5 3c.9-.3 1.6.2 1.4 1.3z"/></svg>Написать в Telegram</a></div>
+ <div class="podpis avt"><img src="i/igor.webp?v=1" alt="Игорь Ильин"><div><b>Игорь Ильин</b><span>Бизнес по-русски</span></div></div>
+</div></section>
+<footer><q>Федеральная сеть городских курортов с фитнесом</q>Так Термоленд называет себя. Пусть об этом узнает каждый, кто ищет, где отдохнуть.</footer>
+<div class="okno" id="okno" onclick="if(event.target===this)zakryt()"><button class="zakr2" onclick="zakryt()" aria-label="Закрыть">× Закрыть</button>
+ <button class="str l" onclick="listat(-1)" aria-label="Предыдущий ролик">←</button><button class="str p" onclick="listat(1)" aria-label="Следующий ролик">→</button><div class="vn">
+ <div><video id="vid" controls playsinline preload="metadata"></video></div>
+ <div><div class="sch" id="sch"></div><h3 id="nz"></h3>
+  <a class="b ak" id="dv" download>Скачать ролик</a><a class="b" id="do" download>Скачать обложку</a>
+  <div class="ml">Описание к ролику</div>
+  <textarea id="tx" readonly></textarea>
+  <button class="b" onclick="kop(this)">Скопировать описание</button></div>
+</div></div>
+<script>
+var D=[{"id": "s1-bani-penza", "nazv": "Грейпфрут в парной - угадай, куда он пойдёт", "opis": "Аккаунт «Бани и парение».\nВеник, пена, групповое парение - и только потом грейпфрут. Ответ в конце. Парение в Термоленде, Пенза. Отметь, с кем пойдёшь.\ntermoland.ru"}, {"id": "s2-zima-moskva", "nazv": "Сугробы вокруг - слабо в этот бассейн?", "opis": "Аккаунт «Куда сходить зимой в Москве».\nСначала жар парной, потом бассейн на улице среди снега. Термоленд в Москве. Отметь, кому слабо.\ntermoland.ru"}, {"id": "s3-turciya-ili-moskva", "nazv": "Это Турция или Москва? Угадай до конца", "opis": "Аккаунт «Куда сходить в Москве».\nГорки, закат у бассейна, пенная вечеринка, лежаки - а потом над пальмой пролетает самолёт. Термоленд Внуково и Зеленоград, Москва. Отметь того, кто копит на Турцию.\ntermoland.ru"}, {"id": "s4-ruki-parmeystera", "nazv": "Ты на полке. Выдержишь до конца?", "opis": "Аккаунт «Парение: испытание».\nВеник разогревают, поддают жару, два веника под потолок - и прямо на тебя. Парение в Термоленде. Отметь, кому слабо.\ntermoland.ru"}, {"id": "s5-vecher-posle-raboty", "nazv": "После работы - снова диван?", "opis": "Аккаунт «Отдых рядом с домом».\nВечер в Термоленде: парение, бассейн с подсветкой, музыка. Пришла в платье - через минуту в воде. Термоленд, Красноярск, Комсомолл. Скинь тому, кто вечером опять на диване.\ntermoland.ru"}, {"id": "s6-ritual-5-shagov", "nazv": "Баня в 5 шагов. Пятый - лучший", "opis": "Аккаунт «Банные ритуалы и уход».\nХвоя, берёза, пена, обливание - и пятый шаг, ради которого всё. Термоленд, Оренбург, ТРЦ «Мармелад». Сохрани на выходные.\ntermoland.ru"}, {"id": "s7-den-dlya-sebya", "nazv": "Куда ходят подруги? Смотри до конца", "opis": "Аккаунт «День для себя».\nПар, соль, уход - и дверь с вывеской «Формула красоты». Термоленд, Оренбург, ТРЦ «Мармелад». Скинь подруге - идёте в субботу?\ntermoland.ru"}],N=D.length,cur=0;
+var tikho=(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)||navigator.webdriver;
+var mysh=window.matchMedia&&matchMedia('(hover: hover) and (pointer: fine)').matches;
+function zaryad(v){if(!v.getAttribute('src')&&v.dataset.src){v.src=v.dataset.src}}
+function igrat(box){var v=box.querySelector('video.pv');if(!v)return;zaryad(v);
+ v.onplaying=function(){box.classList.add('igraet')};var p=v.play();if(p&&p.catch)p.catch(function(){})}
+function stop(box){var v=box.querySelector('video.pv');box.classList.remove('igraet');if(v)v.pause()}
+function vseStop(){[].forEach.call(document.querySelectorAll('.igraet'),stop)}
+/* окно */
+var O=document.getElementById('okno'),VN=O.querySelector('.vn');
+function otkryt(i,sx){cur=(i+N)%N;var r=D[cur],v=document.getElementById('vid');vseStop();
+ document.getElementById('nz').textContent=r.nazv;document.getElementById('tx').value=r.opis;
+ document.getElementById('sch').textContent=(cur+1)+' из '+N;
+ v.poster='o/'+r.id+'.jpg?v=2';v.src='v/'+r.id+'-web.mp4';document.getElementById('dv').href='v/'+r.id+'.mp4';document.getElementById('do').href='o/'+r.id+'.jpg';
+ if(sx){VN.style.setProperty('--sx',sx);VN.classList.remove('smena');void VN.offsetWidth;VN.classList.add('smena')}
+ O.classList.add('on');if(!history.state||!history.state.okno)history.pushState({okno:1},'');
+ var p=v.play();if(p&&p.catch)p.catch(function(){v.muted=true;v.play()})}
+function listat(d){otkryt(cur+d,d>0?'60px':'-60px')}
+function zakryt(iz){var v=document.getElementById('vid');v.pause();O.classList.remove('on');if(!iz&&history.state&&history.state.okno)history.back()}
+window.addEventListener('popstate',function(){if(O.classList.contains('on'))zakryt(1)});
+document.addEventListener('keydown',function(e){if(!O.classList.contains('on'))return;
+ if(e.key==='Escape')zakryt();else if(e.key==='ArrowRight')listat(1);else if(e.key==='ArrowLeft')listat(-1)});
+(function(){var x0=null,y0=0;VN.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+ VN.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;
+  if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)listat(dx<0?1:-1)},{passive:true})})();
+/* плитки и веер */
+[].forEach.call(document.querySelectorAll('.pl,.vk'),function(b){b.addEventListener('click',function(){otkryt(+b.dataset.i)})});
+if(mysh){
+ [].forEach.call(document.querySelectorAll('.pl'),function(pl){var kar=pl.querySelector('.kar');
+  pl.addEventListener('mouseenter',function(){igrat(pl)});
+  pl.addEventListener('mouseleave',function(){stop(pl);['--rx','--ry'].forEach(function(k){kar.style.removeProperty(k)})});
+  pl.addEventListener('mousemove',function(ev){var r=kar.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width,y=(ev.clientY-r.top)/r.height;
+   kar.style.setProperty('--ry',((x-.5)*16).toFixed(1)+'deg');kar.style.setProperty('--rx',((.5-y)*16).toFixed(1)+'deg');
+   kar.style.setProperty('--mx',(x*100).toFixed(0)+'%');kar.style.setProperty('--my',(y*100).toFixed(0)+'%')})});
+}
+/* телефон: играет одна плитка, которая видна целиком */
+if(!mysh&&!tikho&&'IntersectionObserver' in window){var vid=new Set();
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.intersectionRatio>=.75)vid.add(e.target);else vid.delete(e.target)});
+  if(O.classList.contains('on'))return;var vse=[].slice.call(document.querySelectorAll('.pl')),pervaya=null;
+  vse.forEach(function(p){if(!pervaya&&vid.has(p))pervaya=p});
+  vse.forEach(function(p){if(p===pervaya){if(!p.classList.contains('igraet'))igrat(p)}else if(p.classList.contains('igraet'))stop(p)})},{threshold:[0,.75,1]});
+ [].forEach.call(document.querySelectorAll('.pl'),function(p){io.observe(p)})}
+/* веер оживает после загрузки: на компьютере все три, на телефоне средний */
+window.addEventListener('load',function(){if(tikho)return;setTimeout(function(){
+ [].forEach.call(document.querySelectorAll('.vk'),function(b,j){if(mysh||j===1)igrat(b)})},1400)});
+/* появление при прокрутке и счёт цифр */
+function schet(el){var k=+el.dataset.do,t0=null;function sh(t){if(!t0)t0=t;var q=Math.min(1,(t-t0)/1200);el.textContent=Math.round(k*(1-Math.pow(1-q,3)));if(q<1)requestAnimationFrame(sh)}requestAnimationFrame(sh)}
+if(!tikho&&'IntersectionObserver' in window){
+ var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;el.classList.add('vis');ro.unobserve(el);
+  [].forEach.call(el.querySelectorAll('[data-do]'),schet);
+  setTimeout(function(){el.style.setProperty('--d','0s')},1300)})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+ [].forEach.call(document.querySelectorAll('.rv'),function(el){ro.observe(el)});
+} else document.documentElement.classList.remove('js');
+/* запись на звонок */
+(function(){var dni=document.getElementById('dni'),ch=document.getElementById('chasy'),it=document.getElementById('itog'),tg=document.getElementById('tg'),vd=null,vc=null;if(!dni)return;
+var CH=[['утром','10-12'],['днём','12-15'],['после обеда','15-18'],['вечером','после 18']];
+function knopka(kuda,glav,mel,f){var b=document.createElement('button');b.type='button';b.className='ch';b.setAttribute('aria-pressed','false');b.innerHTML=glav+(mel?'<small>'+mel+'</small>':'');
+b.onclick=function(){[].forEach.call(kuda.children,function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');f();obn()};kuda.appendChild(b);return b}
+var d=new Date(),sl=['Сегодня','Завтра'];
+for(var i=0,n=0;n<4&&i<10;i++){var x=new Date(d.getFullYear(),d.getMonth(),d.getDate()+i);if(x.getDay()===0&&i>1)continue;
+ var dt=x.toLocaleDateString('ru-RU',{weekday:'short',day:'numeric',month:'long'});var im=i<2?sl[i]:dt.split(',')[0].replace(/^./,function(c){return c.toUpperCase()});
+ (function(im,dt,i){var b=knopka(dni,im,i<2?dt:dt.split(', ')[1]||dt,function(){vd=(i<2?im.toLowerCase()+', ':'')+dt});if(i===1){b.setAttribute('aria-pressed','true');vd=im.toLowerCase()+', '+dt}})(im,dt,i);n++}
+CH.forEach(function(c,j){var b=knopka(ch,c[0],c[1],function(){vc=c[0]+' '+c[1]});if(j===1){b.setAttribute('aria-pressed','true');vc=c[0]+' '+c[1]}});
+function obn(){it.innerHTML='Звонок: <b>'+vd+', '+vc+'</b>';
+ var t=' Удобно созвониться '+vd+', '+vc+' по Москве.';
+ tg.href='https://t.me/?text='+encodeURIComponent(t);tg.dataset.t=t}
+tg.addEventListener('click',function(){try{navigator.clipboard&&navigator.clipboard.writeText(tg.dataset.t)}catch(e){}});
+obn()})();
+/* большой сундук: нажали - трясётся, крышка открывается, ролики вылетают из него и ложатся сеткой;
+   «в подарок» в шапке ведёт к нему и открывает */
+(function(){var PS=document.getElementById('podsun'),BS=document.getElementById('bsun');
+function otkrytBs(){if(PS.classList.contains('otkr'))return;BS.setAttribute('aria-expanded','true');
+ if(tikho||!BS.animate){PS.classList.add('otkr');BS.classList.add('skryt');return}
+ BS.classList.add('tr');
+ setTimeout(function(){BS.classList.remove('tr');BS.classList.add('otkr')},420);
+ setTimeout(function(){var bb=BS.getBoundingClientRect(),cx=bb.left+bb.width/2,cy=bb.top+bb.width*190/220*.46;
+  BS.classList.add('ushel');PS.classList.add('otkr');
+  var pl=[].slice.call(PS.querySelectorAll('.pl'));
+  pl.forEach(function(p,i){var r=p.getBoundingClientRect(),dx=cx-(r.left+r.width/2),dy=cy-(r.top+r.height/2),rot=(i%2?1:-1)*(8+i%3*5);
+   p.animate([{transform:'translate('+dx+'px,'+dy+'px) scale(.15) rotate(0deg)',opacity:0},
+    {transform:'translate('+(dx*.45)+'px,'+(dy*.45-170)+'px) scale(.82) rotate('+rot+'deg)',opacity:1,offset:.45},
+    {transform:'none',opacity:1}],{duration:1000,delay:i*110,easing:'cubic-bezier(.2,.75,.2,1)',fill:'backwards'})});
+  setTimeout(function(){BS.classList.add('gas')},pl.length*110+450);
+  setTimeout(function(){BS.classList.add('skryt')},pl.length*110+1200)},800)}
+BS.addEventListener('click',otkrytBs);
+document.getElementById('sunk').addEventListener('click',function(){
+ document.getElementById('podarok').scrollIntoView({behavior:tikho?'auto':'smooth',block:'start'});
+ setTimeout(otkrytBs,tikho?0:800)});
+})();
+function kop(b){var t=document.getElementById('tx'),ok=function(){b.textContent='Скопировано';setTimeout(function(){b.textContent='Скопировать описание'},1500)};
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(ok,function(){t.select();document.execCommand('copy');ok()})}else{t.select();document.execCommand('copy');ok()}}
+</script>
+</body></html>
